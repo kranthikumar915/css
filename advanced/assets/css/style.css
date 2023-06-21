@@ -1,0 +1,270 @@
+.title{
+    background-color: purple;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title>h1{
+    color: orange;
+}
+.title>p{
+    color: #fff;
+    font-size: 20px;
+
+}
+/* common class*/
+.common{
+    background-color: #ddd;
+    padding: 30px;
+    margin: 30px;
+    border: 3px solid #ccc;
+}
+.cssOutLine{
+    outline: 3px solid #000;
+    border-radius: 10px;
+}
+/*p3.html*/
+.cssOverflow>p{
+    text-align: justify;
+    line-height: 2;
+    border: 2px solid #000;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+.cssOverflow>p:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*p4.HTML CODE */
+.cssWhitespace{
+    white-space: break-spaces;
+}
+/*p5.HTML CODE */
+.cssUnits>h3:nth-child(1){
+    margin: 0.5in; /*Inches - lin is equal to 2.54cm*/
+}
+.cssUnits>h3:nth-child(2){
+    line-height: 3cm; /*centimeters*/
+}
+.cssUnits>h3:nth-child(3){
+    word-spacing: 4mm; /*milli meters*/
+}
+.cssUnits>h3:nth-child(4){
+     font-size: 12pt; /*points*/
+}
+.cssUnits>h3:nth-child(5){
+    font-size: 1pc; /*picas*/
+}
+.cssUnits>h3:nth-child(6){
+    font-size: 12px; /*pixel*/
+}
+/*p6.HTML CODE*/
+.cssVisibilityDispaly>p{
+    background-color: teal;
+    padding: 20px;
+    border: 5px solid red;
+}
+.cssVisibilityDispaly>.cssVisibility{
+    visibility: hidden;
+}
+.cssVisibilityDispaly>.cssDisplay{
+    display: none;
+}
+/*p7.HTML CODE*/
+.cssWordWrap>p{
+    background-color: #808080;
+    padding: 20px;
+    width: 300px;
+    word-wrap: break-word;
+}
+/*css resize*/
+.cssResize{
+    overflow: auto;
+    resize: both;
+}
+/*css offset-outline*/
+.cssOffsetOutline{
+    outline: 3px solid #000;
+    outline-offset: 10px;
+}
+/*css column count*/
+.cssColumnCount{
+    text-align: justify;
+    line-height: 2;
+    /* column-count: 4; */
+    column-gap: 50px;
+    column-rule: 2px solid red;
+    column-width: 400px;
+}
+/*p8.HTML CODE*/
+.cssOpacity>p{
+    background-color: teal;
+    color: #fff;
+    padding: 20px;
+    opacity: 0.1;
+}
+.cssOpacity>div{
+    background-color: rgba(128,128,128,0.4);
+    color: rgba(255,255,255,0.5);
+}
+/*p9.HTML CODE*/
+.cssAttribute>h1{
+    color: brown;
+}
+.cssAttribute>p{
+    color: #808080;
+}
+.cssAttribute>[title]{
+    background-color: yellow;
+}
+.cssAttribute>p[title]{
+    padding: 20px;
+}
+.cssAttribute>h1[title]{
+    font-style: italic;
+}
+.cssAttribute>p>abbr[id]{
+    background-color: red;
+    color: yellow;
+}
+.cssAttribute>form>[type]{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.cssAttribute>form>[text='text']{
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+.cssAttribute>form>[type='submit']{
+    background-color: lightskyblue;
+    border: 2px solid red;
+}
+/* p10.html*/
+.cssPsuedoClass>h1{
+    color: burlywood;
+
+}
+.cssPsuedoClass>h1:hover{
+    color: green;
+}
+.cssPsuedoClass>a:link{
+    color: yellow;
+}
+.cssPsuedoClass>a:hover{
+    color: blue;
+}
+.cssPsuedoClass>a:active{
+    color: red;
+}
+.cssPsuedoClass>a:visited{
+    color: aqua;
+}
+/* p11.httml*/
+.cssPsuedoElement>section:first-child::first-line, .cssPsuedoElement>section:nth-child(2)::first-letter{
+    background-color: red;
+    color: #fff;
+}
+.cssPsuedoElement>section:nth-child(2)::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+.cssPsuedoElement>section:last-child>h1::before{
+    content:"BEFOR H1 ";
+    background-color: yellow;
+    color: blue;
+}
+.cssPsuedoElement>section:last-child>h1::after{
+    content: "AFTER H1 ";
+    background-color: violet;
+    color: brown;
+}
+/* p12.html*/
+.cssPosition>h1:first-child,.cssPosition>div>h1:first-child{
+    background-color: aqua;
+}
+.cssPosition>h1:nth-child(2), .cssPosition>div>h1:nth-child(2){
+    background-color: yellow;
+}
+.cssPosition>h1:nth-child(3), .cssPosition>div>h1>:nth-child(3){
+    background-color: tomato;
+}
+.cssPosition h1{
+    padding: 20px;
+    color:green;
+}
+.cssPosition>.second{
+    position: relative; /* absolute depends on the body tag, RELATIVE depends on the current position*/
+    top:0px;
+    left:0px;
+}
+.cssPosition>div>.fifth{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.cssPosition>div{
+    position: relative;
+    border: 2px solid black;
+    padding: 20px;
+}
+.cssPosition>.seven{
+    background-color: blue;
+}
+.cssPosition>.eight{
+    background-color: crimson;
+    position: sticky;
+    top: 0%;
+}
+.cssPosition>.nine{
+    background-color: orange;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    border-radius: 10px;
+    transition: 2s;
+}
+.cssPosition>.nine:hover{
+    right:5%;
+}
+/*p13.html*/
+.zIndex>section{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+}
+.zIndex{
+    position: relative;
+    height: 300px;
+}
+.zIndex>.first{
+    background-color: orange;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+
+}
+.zIndex>.second{
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+.zIndex>.third{
+    background-color: purple;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+.zIndex>.first:hover{
+    z-index: 4;
+}
+.zIndex>.second:hover{
+    z-index: 4;
+}

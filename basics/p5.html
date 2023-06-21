@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css basics</title>
+    <style>
+         .combination{
+         background-color: violet;
+         color: white;
+         padding: 20px;
+         
+        }
+        .combination~h5{
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            margin: 20px;
+        }
+        .combination~p{
+            background-color:violet;
+            color:blue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>there are four different combinations inn css...!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>descedent selector(using space)</li>
+        <li>child selector(using > symbol)</li>
+        <li>adjacent sibling selector(using + symbol)</li>
+        <li>general sibling selector(using ~ symbol)</li>
+    </ol>
+    <hr>
+    <h1>general sibling selector(using ~ symbol)</h1>
+    <hr><!--only for parents available not for child elements-->
+
+    <section class="combination">
+        <h3>first h3 tag...!(child element)</h3>
+        <p>first paragraph...!(child element)</p>
+
+        <h3>second h3 tag...!(child element)</h3>
+        <p>second paragraph...!(child element)</p>
+
+        <h3>third h3 tag..!(child element)</h3>
+        <p>third paragraph....!(child element)</p>
+
+        <div>
+            <h3>fourth h3 tag...!(grand child element)</h3>
+            <p>fourth paragraph...!(grand child element)</p>
+        </div>
+
+        <h3>fifth h3 tag...!(child element)</h3>
+        <p>fifth paragraph...!(child element)</p>
+    </section>
+    <hr>
+    <h5>this is first h5</h5>
+    <p>this is first paragraph</p>
+
+    <h5>this is second h5</h5>
+    <p>this is second paragraph</p>
+
+   <div>
+    <h5>this is third h5</h5>
+    <p>this is third paragraph</p>
+
+   </div>
+
+   <h5>this is fourth h5</h5>
+   <p>this is fourthparagraph</p>
+   
+
+
+
+</body>
+</html>
